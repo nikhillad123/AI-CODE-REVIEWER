@@ -1,36 +1,58 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-  height: 100%;
-  width: 100%;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-  padding: 1.5rem;
-  display: flex;
-  gap: 1rem;
-}
-
-main .left,
-main .right {
-  height: 100%;
-  flex-basis: 50%;
-  border-radius: 0.7rem;
-}
-
 main .left {
   background-color: #000000;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.7rem;
+  height: 100%;
 }
 
+.left .code {
+  flex: 1; /* take all remaining space */
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* Button at the bottom */
+main .left .review-btn {
+  margin-top: 1rem;
+  align-self: flex-end;
+  background-color: #646cff;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.1s;
+}
+
+main .left .review-btn:hover {
+  background-color: #535bf2;
+}
+
+main .left .review-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+main .left .review-btn.clicked {
+  background-color: #4b48c9;
+  transform: scale(0.97);
+}
+
+/* Right panel improvements */
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  border-radius: 0.7rem;
+  color: #f1f1f1;
+}
+
+/* Code editor improvements */
 .left .code,
 .code pre,
 .code pre code {
@@ -39,25 +61,16 @@ main .left {
   margin: 0;
   border-radius: 0.7rem;
   background-color: #0c0c0c;
+  font-size: 16px;
+  padding: 1rem;
 }
 
-main .left .review {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  background-color: rgb(219, 219, 255);
-  color: #000000;
-  padding: 0.5rem 2rem;
-  font-weight: 500;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 0.7rem;
+/* Smooth scrollbar for right panel */
+main .right::-webkit-scrollbar {
+  width: 10px;
 }
 
-
-main .right {
-  background-color: #343434;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  overflow: auto;
+main .right::-webkit-scrollbar-thumb {
+  background-color: #646cff;
+  border-radius: 10px;
 }
