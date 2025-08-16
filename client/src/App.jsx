@@ -24,7 +24,8 @@ function App() {
     setLoading(true);
     setButtonClicked(true);
     try {
-      const response = await axios.post('http://localhost:3000/api/ai/get-review', { code });
+      const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const response = await axios.post(backendUrl + `/api/ai/get-review`, { code });
       setReview(response.data);
     } catch {
       setReview("Error: Could not fetch review.");
