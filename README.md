@@ -62,9 +62,10 @@ This project is a minimal full-stack application that provides an interactive we
 
 ---
 
+
 ## 📸 Screenshots
 
-![image](https://github.com/user-attachments/assets/6eb66c29-6a73-4f98-9c15-7625a903a109)
+<img width="1920" height="1080" alt="ai_review_ss" src="https://github.com/user-attachments/assets/d4b41f03-869a-488c-a6ce-6ef90826c0d7" />
 
 ## 🎯 Contributors
 
