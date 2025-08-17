@@ -53,12 +53,12 @@ This project is a minimal full-stack application that provides an interactive we
 
 ## 🌟 Features
 
-✅ **Intuitive User Interface**  A clean and simple two-panel layout for code input and review output.
-✅ **Real-time Code Highlighting** The code editor uses Prism.js to provide syntax highlighting as you type. 
-✅ **Sophisticated AI Prompting:** The backend uses a detailed system prompt to instruct Gemini to act as a "senior code reviewer," ensuring high-quality, professional feedback.  
-✅ **Markdown-Formatted Output:** The AI's response is in markdown, which is then rendered on the front end with rich formatting, including code blocks and lists.
-✅ **Cross-Platform Reviews:** The system prompt is designed to handle a wide range of programming languages, offering a versatile review tool.
-✅ **Deployment Ready** Both the client and server are pre-configured for easy deployment on platforms like Vercel.
+- ✅ **Intuitive User Interface**  A clean and simple two-panel layout for code input and review output.
+- ✅ **Real-time Code Highlighting** The code editor uses Prism.js to provide syntax highlighting as you type. 
+- ✅ **Sophisticated AI Prompting:** The backend uses a detailed system prompt to instruct Gemini to act as a "senior code reviewer," ensuring high-quality, professional feedback.  
+- ✅ **Markdown-Formatted Output:** The AI's response is in markdown, which is then rendered on the front end with rich formatting, including code blocks and lists.
+- ✅ **Cross-Platform Reviews:** The system prompt is designed to handle a wide range of programming languages, offering a versatile review tool.
+- ✅ **Deployment Ready** Both the client and server are pre-configured for easy deployment on platforms like Vercel.
 
 ---
 
